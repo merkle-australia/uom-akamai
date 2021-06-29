@@ -1,30 +1,27 @@
 "use strict";
 
 const gulp = require("gulp");
-const sass = require("gulp-dart-sass");
-const sourcemaps = require("gulp-sourcemaps");
-const concat = require("gulp-concat");
+var sass = require('gulp-sass')(require('sass'))
+const concatCss = require("gulp-concat-css");
 const minifyCSS = require('gulp-minify-css');
 const autoprefixer = require('gulp-autoprefixer');
-const rename = require('gulp-rename');
 
 const SCSS_SOURCE = "./src/styles/main.scss";
 
-function css(cb) {
-    gulp.src(SCSS_SOURCE)
-        .pipe(sass())
+function merge(cb) {
+    gulp.src(["./src/styles/main.scss", './vendor/savethedate-original.css'])
+        .pipe(sass.sync().on('error', sass.logError))
+        .pipe(concatCss('SaveTheDate.css'))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
-        .pipe(concat('vendor/*.css'))
         .pipe(minifyCSS())
-        .pipe(rename('SaveTheDate.css'))
         .pipe(gulp.dest("./"))
     cb()
 };
 
 function watch(cb) {
-    gulp.watch(SCSS_SOURCE, gulp.series(css));
+    gulp.watch(SCSS_SOURCE, gulp.series(merge));
     cb();
 }
 
-exports.default = gulp.series(css);
+exports.default = gulp.series(merge)
 exports.watch = gulp.series(watch)
