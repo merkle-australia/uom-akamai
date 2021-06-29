@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:invalid {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <input
+        id="capture_traditionalRegistration_mobileNumber"
+        data-capturefield="mobileNumber"
+        value=""
+        type="tel"
+        title="international phone number with leading +"
+        placeholder="+61412345678"
+        pattern="^\+[1-9]\d{1,14}$"
+        class="capture_mobileNumber capture_required capture_text_input"
+        placeholder="Mobile Number"
+        name="mobileNumber"
+        autocomplete="off"
+        data-capturescreenname="traditionalRegistration"
+    >
+</body>
+</html>
