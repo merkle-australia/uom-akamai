@@ -2150,9 +2150,13 @@ k("intlTelInputUtils.getValidationError",function(a,b){try{var c=K.g(),d=Z(c,a,b
 k("intlTelInputUtils.isValidNumber",function(a,b){try{var c=K.g(),d=Z(c,a,b);var e=Oa(c,d),g=y(d,1),f=S(c,g,e),h;if(!(h=null==f)){var l;if(l="001"!=e){var z=U(c,e);if(null==z)throw Error("Invalid region code: "+e);var M=y(z,10);l=g!=M}h=l}if(h)var wa=!1;else{var Ta=R(d);wa=-1!=W(Ta,f)}return wa}catch(Ua){return!1}});k("intlTelInputUtils.numberFormat",{E164:0,INTERNATIONAL:1,NATIONAL:2,RFC3966:3});
 k("intlTelInputUtils.numberType",{FIXED_LINE:0,MOBILE:1,FIXED_LINE_OR_MOBILE:2,TOLL_FREE:3,PREMIUM_RATE:4,SHARED_COST:5,VOIP:6,PERSONAL_NUMBER:7,PAGER:8,UAN:9,VOICEMAIL:10,UNKNOWN:-1});k("intlTelInputUtils.validationError",{IS_POSSIBLE:0,INVALID_COUNTRY_CODE:1,TOO_SHORT:2,TOO_LONG:3,IS_POSSIBLE_LOCAL_ONLY:4,INVALID_LENGTH:5});}
 
- var input = document.querySelector("#capture_socialRegistration_mobileNumber");
-     window.intlTelInput(input, {
-      utilsScript:test(),
-     });
+    var input = document.querySelector("#capture_socialRegistration_mobileNumber");
+    window.intlTelInput(input, {
+        utilsScript:test(),
+    });
+
+    input.setAttribute("title", "international phone number with leading +");
+    input.setAttribute("placeholder", "+61412345678");
+    input.setAttribute("pattern", "^\+[1-9]\d{1,14}$");
 });
 });

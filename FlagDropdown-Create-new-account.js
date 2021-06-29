@@ -2154,5 +2154,9 @@ k("intlTelInputUtils.numberType",{FIXED_LINE:0,MOBILE:1,FIXED_LINE_OR_MOBILE:2,T
      window.intlTelInput(input, {
       utilsScript:test(),
      });
+
+     input.setAttribute("title", "international phone number with leading +");
+     input.setAttribute("placeholder", "+61412345678");
+     input.setAttribute("pattern", "^\+[1-9]\d{1,14}$");
 });
 });
