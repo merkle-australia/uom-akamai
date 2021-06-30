@@ -1,9 +1,7 @@
 @import "/src/styles/landingPage.css";
+@import url("./_fonts.scss");
+@import url("./_flags.scss");
 
-// * {
-//   border: 1px solid red;
-// }
-
-// a {
-//   color: blue;
-// }
+* {
+  border: solid 1px red;
+}
