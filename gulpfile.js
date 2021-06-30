@@ -9,7 +9,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const SCSS_SOURCE = "./src/styles/main.scss";
 
 function merge(cb) {
-    gulp.src(["./src/styles/main.scss", './vendor/savethedate-original.css'])
+    gulp.src(["./src/styles/main.scss", './vendor/SaveTheDate-original.css'])
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(concatCss('SaveTheDate.css'))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
