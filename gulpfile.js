@@ -14,7 +14,7 @@ function merge(cb) {
         .pipe(concatCss('SaveTheDate.css'))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
         .pipe(minifyCSS())
-        .pipe(gulp.dest("./"))
+        .pipe(gulp.dest("build"))
     cb()
 };
 
