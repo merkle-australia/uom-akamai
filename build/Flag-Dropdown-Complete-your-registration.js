@@ -1150,7 +1150,7 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
                         // there are multiple country matches, that the first one is selected (note: we could
                         // just check that here, but it requires the same loop that we already have later)
                         var alreadySelected = countryCodes.indexOf(this.selectedCountryData.iso2) !== -1 && numeric.length <= dialCode.length - 1;
-                        var isRegionlessNanpNumber = selectedDialCode === "1" && this._isRegionlessNanp(numeric);
+                        // var isRegionlessNanpNumber = selectedDialCode === "1" && this._isRegionlessNanp(numeric);
                         // only update the flag if:
                         // A) NOT (we currently have a NANP flag selected, and the number is a regionlessNanp)
                         // AND

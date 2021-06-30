@@ -1150,7 +1150,7 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
                         // there are multiple country matches, that the first one is selected (note: we could
                         // just check that here, but it requires the same loop that we already have later)
                         var alreadySelected = countryCodes.indexOf(this.selectedCountryData.iso2) !== -1 && numeric.length <= dialCode.length - 1;
-                        var isRegionlessNanpNumber = selectedDialCode === "1" && this._isRegionlessNanp(numeric);
+                        // var isRegionlessNanpNumber = selectedDialCode === "1" && this._isRegionlessNanp(numeric);
                         // only update the flag if:
                         // A) NOT (we currently have a NANP flag selected, and the number is a regionlessNanp)
                         // AND
@@ -2157,6 +2157,6 @@ k("intlTelInputUtils.numberType",{FIXED_LINE:0,MOBILE:1,FIXED_LINE_OR_MOBILE:2,T
 
      input.setAttribute("title", "international phone number");
      input.setAttribute("type", "tel");
-     input.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(" ", "") )
+     input.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(" ", "").replaceAll("(", "").replaceAll(")", "") )
 });
 });
