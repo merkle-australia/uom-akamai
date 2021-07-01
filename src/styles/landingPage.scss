@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(237, 242, 245);
+}
+
+.iso-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iso-inner-wrapper {
+  max-width: 450px;
+  width: 100%;
+  background-color: white;
+  margin-top: 20%;
+  padding: 20px;
+}
+
+.iso-logo {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+.iso-button {
+  display: inline-block;
+  font-family: "Source Sans Pro";
+  background-color: #094183;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.iso-button:hover {
+  background-color: #4074b2;
+}
+
+.iso-header {
+  color: #1d1d1d;
+  font-weight: 900;
+  font-family: "Noto Serif";
+  text-align: center;
+  font-size: 24px;
+}
+
+.iso-paragraph {
+  text-align: center;
+  color: #4a4a4a;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.iso-text {
+  color: #444;
+  margin-top: 30px;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+}
+
+.iso-seperator {
+  text-align: right;
+  position: absolute;
+  right: 0;
+}
+
+a:-webkit-any-link {
+  color: #34659e;
+  font-size: 15px;
+}
+
+.iso-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.iso-help-centre {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
