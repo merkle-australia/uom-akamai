@@ -1,0 +1,25 @@
+/* Font Calling */
+
+@font-face {
+    font-family: 'Noto Serif';
+    src: url(https://static.identity.unimelb.edu.au/unimelb/dev/SaveTheDate_CSS/Fonts/NotoSerif-Regular.ttf);
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: 'Noto Serif';
+    src: url(https://static.identity.unimelb.edu.au/unimelb/dev/SaveTheDate_CSS/Fonts/NotoSerif-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(https://static.identity.unimelb.edu.au/unimelb/dev/SaveTheDate_CSS/Fonts/SourceSansPro-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(https://static.identity.unimelb.edu.au/unimelb/dev/SaveTheDate_CSS/Fonts/SourceSansPro-Bold.ttf);
+    font-weight: bold;
+}
