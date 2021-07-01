@@ -1,0 +1,156 @@
+.screen-heading {
+  font-family: "Noto Serif";
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000000;
+  text-transform: lowercase;
+}
+
+.screen-heading::first-letter {
+  text-transform: uppercase;
+}
+
+.screen-description {
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+}
+
+.social-login-buttons button {
+  text-align: center;
+  margin: 5px 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgb(9, 65, 131);
+}
+
+button.social-provider.custom-6c25bde1-553a-4c62-aa89-5dc1a67f970a-unimelb-dev-saml
+  span.provider-name {
+  color: white;
+}
+
+.social-login-buttons .provider-name {
+  font-size: 16px;
+  color: black;
+}
+
+.social-login-buttons .content-wrapper {
+  justify-content: center;
+  display: flex;
+}
+
+.provider-name {
+  font-family: "Source Sans Pro";
+}
+
+.traditional-registration p.screen-description {
+  text-align: left;
+}
+
+.social-provider-icon.custom-6c25bde1-553a-4c62-aa89-5dc1a67f970a-unimelb-dev-saml,
+.social-provider-icon.unimelb,
+.social-provider-icon.unimelb-dev-saml,
+.janrain-provider-icon-unimelb,
+.janrain-provider-icon-unimelb-dev-saml {
+  display: none;
+  background-image: url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/unimelb.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: rgb(9, 65, 131);
+  color: white;
+}
+
+#content-wrapper {
+  box-shadow: unset;
+}
+
+#header-container {
+  border-bottom: unset;
+  padding-bottom: 0;
+}
+
+button.social-provider.googleplus {
+  color: black;
+  border: 1px solid #979797;
+}
+
+.social-login-buttons button.googleplus {
+  background-color: unset;
+}
+
+.social-login-buttons button.facebook {
+  background-color: unset;
+  border: 1px solid #979797;
+}
+
+.social-provider-icon {
+  height: 24px;
+  width: 24px;
+  background-size: 24px;
+  vertical-align: middle;
+  border-radius: 3px;
+  margin-right: 7px;
+}
+
+.traditional-registration {
+  .screen-description {
+    text-align: left;
+  }
+}
+
+.aic-control.cancel-link {
+  display: none;
+}
+
+.traditional-registration {
+  justify-content: left;
+}
+
+.footer-container {
+  background-color: #edf2f5;
+  padding-top: 0px;
+}
+
+form label {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Source Sans Pro";
+}
+
+form input {
+  width: 500px;
+  height: 45px;
+}
+
+.janrain-capture-ui .capture_checkbox label {
+  color: #000000 !important;
+  font-family: "Source Sans Pro" !important;
+  font-size: 16px !important;
+  letter-spacing: 0 !important;
+  line-height: 22px !important;
+  margin-bottom: 15px !important;
+  font-weight: 400;
+}
+
+div#capture_traditionalRegistration_form_item_inner_legalAcceptance label {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+
+.register-button {
+  background-color: #094183;
+  font-size: 16px;
+}
+
+.screen > .content-wrapper {
+  margin-bottom: 0px;
+}
+
+.additional-actions-container {
+  padding: 10px 25px 0px 25px;
+  background-color: #edf2f5;
+}
