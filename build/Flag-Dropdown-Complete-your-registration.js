@@ -2157,6 +2157,6 @@ k("intlTelInputUtils.numberType",{FIXED_LINE:0,MOBILE:1,FIXED_LINE_OR_MOBILE:2,T
 
     input.setAttribute("title", "international phone number");
     input.setAttribute("type", "tel");
-    input.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(" ", "") )
+    input.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(" ", "").replaceAll("-", "") )
 });
 });

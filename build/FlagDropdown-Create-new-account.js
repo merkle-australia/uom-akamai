@@ -356,7 +356,7 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
             return Constructor;
         }
         var intlTelInputGlobals = {
-            getInstance: function getInstance(input) {
+            getInstance: function getInstance(input) { 
                 var id = input.getAttribute("data-intl-tel-input-id");
                 return window.intlTelInputGlobals.instances[id];
             },
@@ -391,7 +391,7 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
             // inject a hidden input with this name, and on submit, populate it with the result of getNumber
             hiddenInput: "",
             // initial country
-            initialCountry: "",
+            initialCountry: "au",
             // localized country names e.g. { 'de': 'Deutschland' }
             localizedCountries: null,
             // don't insert international dial codes
@@ -779,7 +779,9 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
                     }
                     // NOTE: if initialCountry is set to auto, that will be handled separately
                     // format - note this wont be run after _updateDialCode as that's only called if no val
-                    if (val) this._updateValFromNumber(val);
+                    if (val) {
+                        this._updateValFromNumber(val);
+                    }
                 }
             }, {
                 key: "_initListeners",
@@ -936,7 +938,7 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
                         var numeric = this._getNumeric(this.telInput.value);
                         // if just a plus, or if just a dial code
                         if (!numeric || this.selectedCountryData.dialCode === numeric) {
-                            this.telInput.value = "";
+                            this.telInput.value = "+";
                         }
                     }
                 }
@@ -2157,6 +2159,7 @@ k("intlTelInputUtils.numberType",{FIXED_LINE:0,MOBILE:1,FIXED_LINE_OR_MOBILE:2,T
 
      input.setAttribute("title", "international phone number");
      input.setAttribute("type", "tel");
-     input.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(" ", "").replaceAll("(", "").replaceAll(")", "") )
+     input.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(/[^a-z0-9+/+/]+/gi, '') )
 });
 });
+
