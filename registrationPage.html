@@ -1,0 +1,2102 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Study Dev Confidential Login Client</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fafafa" />
+    <link
+      rel="stylesheet"
+      href="https://v1.api.au.janrain.com/auth-ui/static/base-2.27.0.css"
+    />
+    <link rel="stylesheet" href="build/SaveTheDate.css" />
+    <link
+      rel="shortcut icon"
+      href="https://v1.api.au.janrain.com/auth-ui/static/favicon.ico"
+      type="image/x-icon"
+    />
+    <script nonce="5d-5V_FlXN7Vjog9dGmBWg">
+      console.log("aic_trace_id: 6e5831be-d7ad-41ad-a4db-c26bbb22f42c");
+    </script>
+    <script
+      nonce="5d-5V_FlXN7Vjog9dGmBWg"
+      src="https://cdn.jsdelivr.net/gh/merkle-australia/uom-akamai/Flag-Dropdown-Complete-your-registration.js"
+      defer
+    ></script>
+    <script
+      src="https://ssl-static.janraincapture.com/widget_data/flow.js:62ute2hrkjjrmf9ke2tj5k39wh:en-US:HEAD:study"
+      type="text/javascript"
+    ></script>
+    <script
+      nonce="5d-5V_FlXN7Vjog9dGmBWg"
+      src="https://cdn.jsdelivr.net/gh/merkle-australia/uom-akamai/FlagDropdown-Create-new-account.js"
+      defer
+    ></script>
+
+    <script
+      nonce="5d-5V_FlXN7Vjog9dGmBWg"
+      src="https://v1.api.au.janrain.com/auth-ui/static/index-2.27.0.js"
+    ></script>
+    <script nonce="5d-5V_FlXN7Vjog9dGmBWg">
+      window.janrain = {
+        common: {},
+        engage: {},
+        ready: true,
+        settings: {
+          analytics: {},
+          appUrl: "https://unimelb-dev.rpxnow.com",
+          appId: "ogfpempddagcojbpndkb",
+          custom: true,
+          capture: {
+            appId: "62ute2hrkjjrmf9ke2tj5k39wh",
+            captureServer:
+              "https://the-university-of-melbourne-dev.au-dev.janraincapture.com",
+            cdnUrl: "https://ssl-static.janraincapture.com",
+            clientId: "jwzpw2fuce67vqtkqej5kfymz3kg4wtg",
+            flowName: "study",
+            flowVersion: "HEAD",
+            keepProfileCookieAfterLogout: false,
+            modalCloseHtml: "X",
+            noModalBorderInlineCss: true,
+            noStyling: true,
+            quiltUrl: "https://quilt-cdn.janrain.com/%VERSION%/",
+            recaptchaVersion: 2,
+            recaptchaInvisible: true,
+            redirectUri: getRedirectUri(),
+            redirectFlow: true,
+            registerFlow: "socialRegistration",
+            responseType: "token",
+            returnExperienceUserData: ["displayName"],
+            setProfileCookie: false,
+          },
+          language: "en-US",
+          noProvidersCss: true,
+          share: {
+            custom: true,
+            translate: {},
+          },
+          tokenUrl:
+            "https://the-university-of-melbourne-dev.au-dev.janraincapture.com",
+          tokenAction: "url",
+          translate: {},
+          permissions: [
+            "customizable_auth_widget_hide_attribution",
+            "customizable_auth_widget_styling",
+          ],
+          popup: false,
+          customSAML: true,
+          customSAMLProviderId: [
+            "6c25bde1-553a-4c62-aa89-5dc1a67f970a.unimelb-dev-saml",
+          ],
+          customSAMLProviderName: {
+            "6c25bde1-553a-4c62-aa89-5dc1a67f970a.unimelb-dev-saml":
+              "UniMelb account",
+          },
+          customSAMLLargeIcon: {
+            "6c25bde1-553a-4c62-aa89-5dc1a67f970a.unimelb-dev-saml":
+              "https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/unimelb.png",
+          },
+          providers:
+            "6c25bde1-553a-4c62-aa89-5dc1a67f970a.unimelb-dev-saml,googleplus,facebook"
+              .split(",")
+              .filter(function (el) {
+                return el;
+              }),
+        },
+        userData: {},
+        gizmo: {
+          passwordRegex: ".*",
+          screenToRender: "traditionalRegistration",
+          existingToken: "",
+          signInForm_authField: "signInEmailAddress",
+          availableSecondFactorMethods: ["email", "sms"],
+          aicUiStrings: {
+            textWelcomeMessage:
+              'Continue to <span class="aic-site-name">Study Dev Confidential Login Client</span>',
+            textErrorMobileNumberFormat: "Error sms is not a valid format",
+            textErrorMobileNumberFormatShort: "Error too short",
+            textErrorMobileNumberFormatLong: "Error too long",
+            textErrorMobileNumberFormatCountryCode:
+              "Error invalid Country Code",
+          },
+          aicCsrf:
+            "aece91c0946b3736560a916bc09355574e6b2a859f0c519aa599bb9ecb2ebdc3",
+          customProviders: [
+            {
+              provider: "unimelb",
+              provider_css_id:
+                "custom-6c25bde1-553a-4c62-aa89-5dc1a67f970a-unimelb-dev-saml",
+              provider_icon:
+                "https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/unimelb.png",
+              provider_id:
+                "6c25bde1-553a-4c62-aa89-5dc1a67f970a.unimelb-dev-saml",
+              provider_id_name: "unimelb-dev-saml",
+              provider_name: "UniMelb account",
+            },
+          ],
+          profileLockedFields: [],
+        },
+      };
+    </script>
+    <script
+      nonce="5d-5V_FlXN7Vjog9dGmBWg"
+      src="https://widget-cdn.janraincapture.com/manifest/login"
+      defer
+    ></script>
+
+    <style>
+      .social-provider-icon.custom-6c25bde1-553a-4c62-aa89-5dc1a67f970a-unimelb-dev-saml,
+      .social-provider-icon.unimelb,
+      .social-provider-icon.unimelb-dev-saml,
+      .janrain-provider-icon-unimelb,
+      .janrain-provider-icon-unimelb-dev-saml {
+        background-image: url("https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/unimelb.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+  <body class="region-global">
+    <div id="main-container">
+      <div id="content-wrapper">
+        <div id="header-container">
+          <div id="logo-wrapper">
+            <img
+              id="logo"
+              src="https://static.identity.unimelb.edu.au/unimelb/dev/help-center/images/logo-with-padding.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+
+        <div id="content-container">
+          <div id="janrainCaptureWidget">
+            <div id="initialLoadScreen">
+              <!-- This exists just to keep the widget happy -->
+            </div>
+
+            <div style="display: none" id="signIn" class="screen">
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">{* textSignInScreenHeading *}</h1>
+                <p class="screen-description">
+                  Continue to
+                  <span class="aic-site-name"
+                    >Study Dev Confidential Login Client</span
+                  >
+                </p>
+                <p class="screen-description">
+                  {* textSignInScreenSubHeading *}
+                </p>
+                <div class="social-signin">
+                  <div class="social-login-buttons"></div>
+                </div>
+                <hr />
+                <span class="alternate-credentials"
+                  >{* textSignInAlternativeCredentials *}</span
+                >
+                <div class="traditional-signin">
+                  {* #signInForm *} {* signInEmailAddress *} {* currentPassword
+                  *}
+                  <div class="form-action-buttons">
+                    <button type="submit" class="sign-in-button">
+                      {* textSignIn *}
+                    </button>
+
+                    <a
+                      href="#"
+                      class="forgot-password-link aic-control"
+                      data-render-screen="resetPasswordRequest"
+                      >{* textForgotPassword *}</a
+                    >
+                  </div>
+                  {* /signInForm *}
+                </div>
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text"
+                    >{* textNeedAnAccount *}<a
+                      href="#"
+                      class="aic-control"
+                      data-render-screen="traditionalRegistration"
+                      >{* textSignUp *}</a
+                    ></span
+                  >
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textCancelRequest *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="resetPasswordRequest" class="screen">
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textResetPasswordRequestScreenHeading *}
+                </h1>
+
+                <p class="screen-description">{* textResetPasswordSendTo *}</p>
+                {* #resetPasswordRequestForm *} {* signInEmailAddress *}
+                <div class="form-action-buttons">
+                  <button type="submit">
+                    {* textResetPasswordRequestSubmit *}
+                  </button>
+                </div>
+                {* /resetPasswordRequestForm *}
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text" id="resetPasswordSignInRedirectText"
+                    >{* textResetPasswordRedirectToSignInText *}<a
+                      href="#"
+                      class="aic-control"
+                      data-action="signInFromResetPasswordRequest"
+                      id="resetPasswordRequestSignInRedirectLink"
+                      >{* textResetPasswordRedirectToSignInLink *}</a
+                    ></span
+                  >
+                  <span class="help-text">
+                    <a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                    >
+                      {* textCancelRequest *}
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: none"
+              id="resetPasswordRequestSuccess"
+              class="screen"
+            >
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textResetPasswordRequestScreenHeading *}
+                </h1>
+                <p class="screen-description">
+                  {* textResetPasswordRequestCodeSuccess *}
+                </p>
+                <span class="help-text" id="resetPasswordResendText"
+                  >{* textResetPasswordResendText *}<a
+                    href="#"
+                    class="aic-control"
+                    data-render-screen="resetPasswordRequest"
+                    id="resetPasswordResendLink"
+                    >{* textResetPasswordResendLink *}</a
+                  ></span
+                >
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textCancelRequest *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="display: none"
+              id="resetPasswordCodeExchange"
+              class="screen"
+            >
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textResetPasswordRequestScreenHeading *}
+                </h1>
+
+                <p class="screen-description">
+                  {* textResetPasswordUnrecognizedCode *}
+                </p>
+                {* #resetPasswordRequestForm *} {* signInEmailAddress *}
+                <div class="form-action-buttons">
+                  <button type="submit">
+                    {* textResetPasswordRequestSubmit *}
+                  </button>
+                </div>
+                {* /resetPasswordRequestForm *}
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textCancelRequest *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="resetPassword" class="screen">
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textResetPasswordScreenHeading *}
+                </h1>
+
+                {* #changePasswordNoAuthForm *} {* newPassword *} {*
+                newPasswordConfirm *}
+                <div class="form-action-buttons">
+                  <button type="submit">{* textUpdatePassword *}</button>
+                </div>
+                {* /changePasswordNoAuthForm *}
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text">
+                    <a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                    >
+                      {* textCancelRequest *}
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="resetPasswordSuccess" class="screen">
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textResetPasswordSuccessScreenHeading *}
+                </h1>
+                <p class="screen-description">{* textResetPasswordSuccess *}</p>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="verifyEmail" class="screen">
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textVerifyEmailScreenHeading *}
+                </h1>
+
+                <p class="screen-description">{* textVerifyEmailFailure *}</p>
+                {* #resendVerificationForm *} {* signInEmailAddress *}
+                <div class="form-action-buttons">
+                  <button type="submit">
+                    {* textVerifyEmailRequestSubmit *}
+                  </button>
+                </div>
+                {* /resendVerificationForm *}
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text">
+                    <a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                    >
+                      {* textCancelRequest *}
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: none"
+              id="resendVerificationSuccess"
+              class="screen"
+            >
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textResendVerificationSuccessScreenHeading *}
+                </h1>
+                <p class="screen-description">
+                  {* textResendVerificationSuccess *}
+                </p>
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text">
+                    <a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                    >
+                      {* textCancelRequest *}
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="verifyEmailSuccess" class="screen">
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textVerifyEmailSuccessScreenHeading *}
+                </h1>
+                <p class="screen-description">{* textVerifyEmailSuccess *}</p>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: none"
+              id="traditionalRegistration"
+              class="screen"
+            >
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">{* textCreateNewAccount *}</h1>
+                <p class="screen-description">
+                  {* textCreateNewAccountSubHeading *}
+                </p>
+                <div class="social-signin">
+                  <p class="screen-description">
+                    {* textCreateNewAccountSocialSubHeading *}
+                  </p>
+                  <div class="social-login-buttons"></div>
+                </div>
+                <div class="traditional-registration">
+                  <p class="screen-description">
+                    {* textCreateNewAccountTraditionalSubHeading *}
+                  </p>
+                  {* #traditionalRegistrationForm *} {* firstName *} {* lastName
+                  *} {* emailAddress *} {* newPassword *} {* newPasswordConfirm
+                  *} {* mobileNumber *} {* privacyString *} {* legalAcceptance
+                  *} {* marketingConsent *}
+                  <p class="registration-acceptance">
+                    {* textAcceptanceBlurb *}
+                  </p>
+                  <div class="form-action-buttons">
+                    <button type="submit" class="register-button">
+                      {* textCreateAccount *}
+                    </button>
+                  </div>
+                  {* /traditionalRegistrationForm *}
+                </div>
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span
+                    class="help-text"
+                    id="traditionalRegistrationSignInRedirectText"
+                    >{* textRegistrationRedirectToSignInText *}<a
+                      href="#"
+                      class="aic-control"
+                      data-render-screen="signIn"
+                      id="traditionalRegistrationSignInRedirectLink"
+                      >{* textRegistrationRedirectToSignInLink *}</a
+                    ></span
+                  >
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textRegistrationCancel *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="socialRegistration" class="screen">
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textCompleteYourRegistration *}
+                </h1>
+                {* #socialRegistrationForm *} {* emailAddress *} {* firstName *}
+                {* lastName *} {* mobileNumber *} {* privacyString *} {*
+                legalAcceptance *} {* marketingConsent *}
+                <p class="registration-acceptance">{* textAcceptanceBlurb *}</p>
+                <div class="form-action-buttons">
+                  <button type="submit" class="register-button">
+                    {* textCreateAccount *}
+                  </button>
+                </div>
+                {* /socialRegistrationForm *}
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textRegistrationCancel *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="mergeAccounts" class="screen">
+              <div class="auth-screen content-wrapper">
+                {* mergeAccounts {"custom": true} *}
+                <h1 class="screen-heading">{* textVerifyIdentity *}</h1>
+                <p class="screen-description">{* textExistingAccountFound *}</p>
+                <div class="provider-identity-box">
+                  <span
+                    class="
+                      social-provider-icon
+                      {|
+                      existing_provider_lowerCase
+                      |}
+                    "
+                  ></span>
+                  <div class="profile-account-photo">
+                    {| rendered_existing_provider_photo |}
+                  </div>
+                </div>
+                <p>{* textJustSignedInWithProvider *}</p>
+                <div class="provider-identity-box">
+                  <span
+                    class="
+                      social-provider-icon
+                      {|
+                      current_provider_lowerCase
+                      |}
+                    "
+                  ></span>
+                  <div class="profile-account-photo">
+                    {| rendered_current_photo |}
+                  </div>
+                </div>
+                <p>{* textVerifyWithProviderToMerge *}</p>
+
+                <div class="form-action-buttons flex">{| connect_button |}</div>
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textCancelRequest *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: none"
+              id="traditionalAuthenticateMerge"
+              class="screen"
+            >
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textMergeAccountAuthScreenHeading *}
+                </h1>
+                <p class="screen-description">
+                  {* textMergeAccountAuthScreenSubHeading *}
+                </p>
+                <div class="capture_signin">
+                  {* #signInForm *} {* signInEmailAddress *} {* currentPassword
+                  *}
+                  <div class="form-action-buttons">
+                    <button type="submit" class="sign-in-button">
+                      {* textSignIn *}
+                    </button>
+                  </div>
+                  {* /signInForm *}
+                </div>
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textSignInCancel *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="manageProfile" class="screen">
+              <div class="manage-screen content-wrapper">
+                <div class="profile-header-actions">
+                  <div class="return-to-app-container"></div>
+                  <div class="logout-container">
+                    <button
+                      type="button"
+                      class="aic-control logout"
+                      data-action="logout"
+                    >
+                      {* textLogout *}
+                    </button>
+                  </div>
+                </div>
+                <div class="profile-header">
+                  <div
+                    class="profile-header-image user-photo-container"
+                    data-render-user-photo="large"
+                  ></div>
+                  <div class="profile-header-text">
+                    <h1>{* dataDisplayName *}</h1>
+                    <h3>{* dataEmailAddress *}</h3>
+                  </div>
+                </div>
+                <h1 class="screen-heading">{* textAccountScreensHeading *}</h1>
+                <div class="profile-management-container">
+                  <div
+                    class="profile-management-card aic-control"
+                    data-render-screen="manageProfile_data"
+                  >
+                    <div class="card-heading">
+                      <h1>
+                        <span class="profile-data card-icon"></span>{*
+                        textPersonalData *}<span class="chevron right"></span>
+                      </h1>
+                    </div>
+                    <div class="card-body">
+                      <p>{* textPersonalDataSectionDescription *}</p>
+                    </div>
+                  </div>
+                  <div
+                    class="profile-management-card aic-control"
+                    data-render-screen="manageProfile_security"
+                  >
+                    <div class="card-heading">
+                      <h1>
+                        <span class="profile-security card-icon"></span>{*
+                        textAccountSecurity *}<span
+                          class="chevron right"
+                        ></span>
+                      </h1>
+                    </div>
+                    <div class="card-body">
+                      <p>{* textAccountSecuritySectionDescription *}</p>
+                    </div>
+                  </div>
+                  <div
+                    class="profile-management-card aic-control"
+                    data-render-screen="manageProfile_privacy"
+                  >
+                    <div class="card-heading">
+                      <h1>
+                        <span class="profile-privacy card-icon"></span>{*
+                        textPrivacySettings *}<span
+                          class="chevron right"
+                        ></span>
+                      </h1>
+                    </div>
+                    <div class="card-body">
+                      <p>{* textPrivacySettingsSectionDescription *}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="manageProfile_data" class="screen">
+              <div class="manage-screen content-wrapper">
+                <div class="profile-header-actions">
+                  <div class="return-to-app-container"></div>
+                  <div class="logout-container">
+                    <button
+                      type="button"
+                      class="aic-control logout"
+                      data-action="logout"
+                    >
+                      {* textLogout *}
+                    </button>
+                  </div>
+                </div>
+                <div class="profile-header">
+                  <div
+                    class="profile-header-image user-photo-container"
+                    data-render-user-photo="large"
+                  ></div>
+                  <div class="profile-header-text">
+                    <h1>{* dataDisplayName *}</h1>
+                    <h3>{* dataEmailAddress *}</h3>
+                  </div>
+                </div>
+                <h1 class="screen-heading">{* textAccountScreensHeading *}</h1>
+                <div class="profile-management-container profile-data">
+                  <div class="profile-management-card large">
+                    <div
+                      class="card-heading aic-control"
+                      data-render-screen="manageProfile"
+                    >
+                      <h1>
+                        <span class="chevron left"></span
+                        ><span class="profile-data card-icon"></span>{*
+                        textPersonalData *}
+                      </h1>
+                    </div>
+                    <div class="card-body">
+                      {* #manageProfile_dataForm *} {* displayName *} {*
+                      middleName *} {* emailAddress *}
+                      <div class="form-action-buttons">
+                        <button type="submit">{* textSaveChanges *}</button>
+                        <button
+                          type="button"
+                          class="secondary aic-control"
+                          data-render-screen="manageProfile"
+                        >
+                          {* textBackToUserProfile *}
+                        </button>
+                        {* savedProfileMessage *}
+                      </div>
+                      {* /manageProfile_dataForm *}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: none"
+              id="manageProfile_security"
+              class="screen"
+            >
+              <div class="manage-screen content-wrapper">
+                <div class="profile-header-actions">
+                  <div class="return-to-app-container"></div>
+                  <div class="logout-container">
+                    <button
+                      type="button"
+                      class="aic-control logout"
+                      data-action="logout"
+                    >
+                      {* textLogout *}
+                    </button>
+                  </div>
+                </div>
+                <div class="profile-header">
+                  <div
+                    class="profile-header-image user-photo-container"
+                    data-render-user-photo="large"
+                  ></div>
+                  <div class="profile-header-text">
+                    <h1>{* dataDisplayName *}</h1>
+                    <h3>{* dataEmailAddress *}</h3>
+                  </div>
+                </div>
+                <h1 class="screen-heading">{* textAccountScreensHeading *}</h1>
+                <div class="profile-management-container profile-security">
+                  <div class="profile-management-card large">
+                    <div
+                      class="card-heading aic-control"
+                      data-render-screen="manageProfile"
+                    >
+                      <h1>
+                        <span class="chevron left"></span
+                        ><span class="profile-preferences card-icon"></span>{*
+                        textAccountSecurity *}
+                      </h1>
+                    </div>
+                    <div class="card-body">
+                      <section class="profile">
+                        <article class="email">
+                          <div id="profileEmail" class="profile-card">
+                            <div class="profile-show">
+                              <h2>{* textEmailTitle *}</h2>
+
+                              <p
+                                class="action-description existing-value"
+                                id="existingEmail"
+                              >
+                                sadasd@asdad.com
+                              </p>
+                            </div>
+                            <div class="profile-actions">
+                              <div
+                                class="profile-action-icons"
+                                data-group="profileEmailAction"
+                              >
+                                <button
+                                  type="button"
+                                  class="aic-icon icon-edit"
+                                  value="edit"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="profileEmailAction" class="action-card">
+                            <aside
+                              class="profile-action-icons"
+                              data-group="profileEmailAction"
+                            >
+                              <button
+                                type="button"
+                                value="close"
+                                class="aic-icon icon-subtract"
+                              ></button>
+                            </aside>
+                            <div id="containerChangeEmailForm" class="edit add">
+                              <h2>{* textChangeEmailTitle *}</h2>
+
+                              <p class="action-description">
+                                {* textChangeEmailFormValue *}
+                              </p>
+                              <label for="changeEmailInput"
+                                >{* textEmailLabel *}</label
+                              >
+                              <p>
+                                <input
+                                  id="changeEmailInput"
+                                  name="changeEmailInput"
+                                  value=""
+                                  type="text"
+                                  class="aic-input"
+                                  placeholder="{* textChangeEmailPlaceholder *}"
+                                  data-action="submitRequestChangeEmail"
+                                  data-initialize="sadasd@asdad.com"
+                                />
+                              </p>
+                              <div id="errorChangeEmail"><p></p></div>
+                              <button
+                                type="submit"
+                                id="submitRequestChangeEmailButton"
+                                class="aic-control"
+                                data-action="submitRequestChangeEmail"
+                              >
+                                {* textChangeEmailSubmit *}
+                              </button>
+                            </div>
+                            <div id="containerChangeEmailConfirm">
+                              <h2>{* textChangeEmailConfirmTitle *}</h2>
+                              <p class="action-description">
+                                {* textChangeEmailConfirmValue *}
+                                <a id="changeEmailSentTo"></a>
+                              </p>
+                              <p>
+                                <label>{* textChangeEmailCodeLabel *}</label>
+                              </p>
+                              <p>
+                                <input
+                                  id="secondFactorCodeChangeEmailInput"
+                                  value=""
+                                  type="text"
+                                  class="aic-input"
+                                  placeholder="{* textChangeEmailCodePlaceholder *}"
+                                  data-action="submitChangeEmailCode"
+                                />
+                              </p>
+                              <button
+                                type="submit"
+                                id="submitChangeEmailCodeButton"
+                                class="aic-control"
+                                data-action="submitChangeEmailCode"
+                              >
+                                {* textChangeEmailCodeCodeSubmit *}
+                              </button>
+                              <div id="resendCodeSecondFactorChangeEmail">
+                                <p>
+                                  {* textSecondFactorChangeEmailCodeResend *}
+                                  <a
+                                    href="#"
+                                    class="aic-control"
+                                    data-action="resendChangeEmailCode"
+                                  >
+                                    {* textSecondFactorChangeEmailCodeSendLink
+                                    *}
+                                  </a>
+                                </p>
+                              </div>
+                              <div
+                                id="resendCodeSecondFactorChangeEmailInvalid"
+                              >
+                                <p class="aic-error">
+                                  {*
+                                  textSecondFactorChangeEmailCodeResendInvalid
+                                  *}
+                                  <a
+                                    href="#"
+                                    class="aic-control aic-error"
+                                    data-action="resendChangeEmailCode"
+                                  >
+                                    {*
+                                    textSecondFactorChangeEmailCodeSendLinkInvalid
+                                    *}
+                                  </a>
+                                </p>
+                              </div>
+                            </div>
+                            <div id="containerChangeEmailSuccess">
+                              <p class="aic-success">
+                                {* textChangeEmailCodeCodeSuccess *}
+                              </p>
+                            </div>
+                          </div>
+                        </article>
+
+                        <article class="phone">
+                          <div id="profilePhone" class="profile-card">
+                            <div class="profile-show">
+                              <h2>{* textMobileNumberTitle *}</h2>
+
+                              <p
+                                class="action-description existing-value"
+                                id="existingMobileNumber"
+                              >
+                                <span class="existing-tel-flag"></span>
+                                <span id="existingMobileNumberValue"
+                                  >+614123145678
+                                </span>
+                              </p>
+                            </div>
+                            <div class="profile-actions">
+                              <aside
+                                class="profile-action-icons"
+                                data-group="profilePhoneAction"
+                              >
+                                <button
+                                  type="button"
+                                  class="aic-icon icon-edit"
+                                  value="edit"
+                                ></button>
+                                <button
+                                  type="button"
+                                  class="aic-icon icon-delete"
+                                  value="delete"
+                                ></button>
+                              </aside>
+                            </div>
+                          </div>
+                          <div id="profilePhoneAction" class="action-card">
+                            <aside
+                              class="profile-action-icons"
+                              data-group="profilePhoneAction"
+                            >
+                              <button
+                                type="button"
+                                value="close"
+                                class="aic-icon icon-subtract"
+                              ></button>
+                            </aside>
+                            <div
+                              id="containerChangeMobileNumberForm"
+                              class="edit add"
+                            >
+                              <h2>{* textChangeMobileNumberTitle *}</h2>
+
+                              <p class="action-description">
+                                {* textChangeMobileNumberFormValue *}
+                              </p>
+                              <label>{* textMobileNumberLabel *}</label>
+                              <p>
+                                <input
+                                  id="changeMobileNumberInput"
+                                  class="aic-input"
+                                  type="tel"
+                                  value=""
+                                  name="changeMobileNumberInput"
+                                  placeholder="{* textChangeMobileNumberPlaceholder *}"
+                                  data-action="submitRequestChangeMobileNumber"
+                                  data-initialize="+614123145678"
+                                />
+                              </p>
+                              <div id="errorChangeMobileNumber"><p></p></div>
+                              <button
+                                type="submit"
+                                id="submitRequestChangeMobileNumberButton"
+                                class="aic-control"
+                                data-action="submitRequestChangeMobileNumber"
+                              >
+                                {* textChangeMobileNumberSubmit *}
+                              </button>
+                            </div>
+                            <div id="containerChangeMobileNumberConfirm">
+                              <h2>{* textChangeMobileNumberConfirmTitle *}</h2>
+                              <p class="action-description">
+                                {* textChangeMobileNumberConfirmValue *}
+                                <span class="phone-group">
+                                  <span class="codesentto-tel-flag"></span>
+                                  <a id="changeMobileNumberSentTo"></a>
+                                </span>
+                              </p>
+                              <p>
+                                <label
+                                  >{* textChangeMobileNumberCodeLabel *}</label
+                                >
+                              </p>
+                              <p>
+                                <input
+                                  id="secondFactorCodeChangeMobileNumberInput"
+                                  value=""
+                                  type="text"
+                                  class="aic-input"
+                                  placeholder="{* textChangeMobileNumberCodePlaceholder *}"
+                                  data-action="submitChangeMobileNumberCode"
+                                />
+                              </p>
+                              <button
+                                type="submit"
+                                id="submitChangeMobileNumberCodeButton"
+                                class="aic-control"
+                                data-action="submitChangeMobileNumberCode"
+                              >
+                                {* textChangeMobileNumberCodeCodeSubmit *}
+                              </button>
+                              <div
+                                id="resendCodeSecondFactorChangeMobileNumber"
+                              >
+                                <p>
+                                  {*
+                                  textSecondFactorChangeMobileNumberCodeResend
+                                  *}
+                                  <a
+                                    href="#"
+                                    class="aic-control"
+                                    data-action="resendChangeMobileNumberCode"
+                                  >
+                                    {*
+                                    textSecondFactorChangeMobileNumberCodeSendLink
+                                    *}
+                                  </a>
+                                </p>
+                              </div>
+                              <div
+                                id="resendCodeSecondFactorChangeMobileNumberInvalid"
+                              >
+                                <p class="aic-error">
+                                  {*
+                                  textSecondFactorChangeMobileNumberCodeResendInvalid
+                                  *}
+                                  <a
+                                    href="#"
+                                    class="aic-control aic-error"
+                                    data-action="resendChangeMobileNumberCode"
+                                  >
+                                    {*
+                                    textSecondFactorChangeMobileNumberCodeSendLinkInvalid
+                                    *}
+                                  </a>
+                                </p>
+                              </div>
+                            </div>
+                            <div id="containerChangeMobileNumberSuccess">
+                              <p class="aic-success">
+                                {* textChangeMobileNumberCodeCodeSuccess *}
+                              </p>
+                            </div>
+                            <div
+                              id="containerDeleteMobileNumberSuccess"
+                              class="delete"
+                            >
+                              <h2>{* textDeleteMobileNumberTitle *}</h2>
+
+                              <p>
+                                {* textDeleteMobileNumberValue *}
+                                <span class="phone-group">
+                                  <span class="existing-tel-flag"></span>
+                                  <a id="deleteSmsNumber">+614123145678</a>
+                                </span>
+                              </p>
+                              <div class="flex-row">
+                                <button
+                                  type="button"
+                                  id="cancelDeleteMobileNumberButton"
+                                  class="aic-control secondary"
+                                  data-action="cancelDeleteMobileNumber"
+                                  value="cancel-delete"
+                                >
+                                  {* textDeleteMobileNumberNo *}
+                                </button>
+                                <button
+                                  type="button"
+                                  id="deleteMobileNumberButton"
+                                  class="aic-control"
+                                  data-action="deleteMobileNumber"
+                                  value="confirm-delete"
+                                >
+                                  {* textDeleteMobileNumberYes *}
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+
+                        <article class="password">
+                          <div id="profilePassword" class="profile-card">
+                            <div class="profile-show">
+                              <h2>{* textPasswordTitle *}</h2>
+                              <p id="existingPassword">**************</p>
+                            </div>
+                            <div class="profile-actions">
+                              <aside
+                                class="profile-action-icons"
+                                data-group="profilePasswordAction"
+                              >
+                                <button
+                                  type="button"
+                                  class="aic-icon icon-edit"
+                                  value="edit"
+                                ></button>
+                              </aside>
+                            </div>
+                          </div>
+                          <div id="profilePasswordAction" class="action-card">
+                            <aside
+                              class="profile-action-icons"
+                              data-group="profilePasswordAction"
+                            >
+                              <button
+                                type="button"
+                                value="close"
+                                class="aic-icon icon-subtract"
+                              ></button>
+                            </aside>
+                            <div class="add edit">
+                              <h2>{* textPasswordSettings *}</h2>
+                              {* #changePasswordForm *} {* currentPassword *} {*
+                              newPassword *} {* newPasswordConfirm *}
+                              <div class="form-action-buttons flex">
+                                <button type="submit">
+                                  {* textSaveChanges *}
+                                </button>
+                                {* savedProfileMessage *}
+                              </div>
+                              {* /changePasswordForm *}
+                            </div>
+                          </div>
+                        </article>
+                      </section>
+
+                      <section class="integrations">
+                        <article class="linked-accounts">
+                          <div class="integration-card">
+                            <div class="flex-quad-header">
+                              <h2>{* textLinkAccountsSettings *}</h2>
+                              <p>{* textLinkAccountsDescription *}</p>
+                            </div>
+                            <div class="flex-quad-body" id="link-account-aic">
+                              {* linkedAccounts *} {* #linkAccountContainer *}
+                              {* /linkAccountContainer *}
+                              <div
+                                class="social-login-buttons link-account"
+                                data-button-prefix="{* textConnectWith *}"
+                              ></div>
+                            </div>
+                          </div>
+                        </article>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: none"
+              id="manageProfile_privacy"
+              class="screen"
+            >
+              <div class="manage-screen content-wrapper">
+                <div class="profile-header-actions">
+                  <div class="return-to-app-container"></div>
+                  <div class="logout-container">
+                    <button
+                      type="button"
+                      class="aic-control logout"
+                      data-action="logout"
+                    >
+                      {* textLogout *}
+                    </button>
+                  </div>
+                </div>
+                <div class="profile-header">
+                  <div
+                    class="profile-header-image user-photo-container"
+                    data-render-user-photo="large"
+                  ></div>
+                  <div class="profile-header-text">
+                    <h1>{* dataDisplayName *}</h1>
+                    <h3>{* dataEmailAddress *}</h3>
+                  </div>
+                </div>
+                <h1 class="screen-heading">{* textAccountScreensHeading *}</h1>
+                <div class="profile-management-container profile-privacy">
+                  <div class="profile-management-card large">
+                    <div
+                      class="card-heading aic-control"
+                      data-render-screen="manageProfile"
+                    >
+                      <h1>
+                        <span class="chevron left"></span
+                        ><span class="profile-privacy card-icon"></span>{*
+                        textPrivacySettings *}
+                      </h1>
+                    </div>
+                    <div class="card-body">
+                      <h2>{* textPrivacySettings *}</h2>
+                      <p>{* textPrivacySettingsSectionDescription *}</p>
+                      {* #manageProfile_privacyForm *} {* marketingConsent *}
+                      <div class="form-action-buttons">
+                        <button type="submit">{* textSaveChanges *}</button>
+                        <button
+                          type="button"
+                          class="secondary aic-control"
+                          data-render-screen="manageProfile"
+                        >
+                          {* textBackToUserProfile *}
+                        </button>
+                      </div>
+                      {* /manageProfile_privacyForm *}
+                      <h2>{* textAccountActions *}</h2>
+                      <div class="flex-row">
+                        <div class="action-card">
+                          <h3>{* textRequestDataHeader *}</h3>
+                          <p>{* textRequestDataMessage *}</p>
+                          <button
+                            id="requestData"
+                            type="button"
+                            class="danger aic-control"
+                            data-action="requestData"
+                          >
+                            {* textRequestDataButton *}
+                          </button>
+                        </div>
+                        <div class="action-card">
+                          <h3>{* textDeleteAccountHeader *}</h3>
+                          <p>{* textDeleteAccountMessage *}</p>
+                          <button
+                            id="deleteAccount"
+                            type="button"
+                            class="danger aic-control"
+                            data-action="deleteAccount"
+                            data-button-confirm="{* textDeleteAccountConfirm *}"
+                          >
+                            {* textDeleteAccountButton *}
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="loginSuccess" class="screen">
+              <div class="auth-success-screen content-wrapper">
+                <span class="success-check"></span>
+                <h2 class="screen-heading">{* textLoginSuccessful *}</h2>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="registrationSuccess" class="screen">
+              <div class="auth-success-screen content-wrapper">
+                <span class="success-check"></span>
+                <h2 class="screen-heading">{* textRegistrationSuccessful *}</h2>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="logoutSuccess" class="screen">
+              <div class="auth-success-screen content-wrapper">
+                <span class="success-check"></span>
+                <h2 class="screen-heading">{* textLogoutSuccessful *}</h2>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: none"
+              id="authRule_secondFactor"
+              class="screen"
+            >
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textAuthRuleSecondFactorHeading *}
+                </h1>
+                <p class="screen-description">
+                  {* textAuthRuleSecondFactorValue *}
+                </p>
+                <div class="form-action-buttons">
+                  <p class="action-description">
+                    {* textAuthRuleSecondFactorActionTitle *}
+                  </p>
+
+                  <div id="requestSecondFactorEmailCodeContainer">
+                    <p
+                      class="action-description"
+                      id="requestSecondFactorEmailCodeTitle"
+                    >
+                      {* textAuthRuleSecondFactorEmailCodeTitle *}
+                    </p>
+                    <button
+                      type="submit"
+                      id="requestSecondFactorEmailCodeButton"
+                      class="aic-control"
+                      data-action="requestSecondFactorEmailCode"
+                    >
+                      s****d@asdad.com
+                    </button>
+                    <p
+                      class="aic-error"
+                      id="requestSecondFactorCodeEmailError"
+                    ></p>
+                  </div>
+
+                  <div id="requestSecondFactorSmsCodeContainer">
+                    <p
+                      class="action-description"
+                      id="requestSecondFactorSmsCodeTitle"
+                    >
+                      {* textAuthRuleSecondFactorSmsCodeTitle *}
+                    </p>
+                    <button
+                      type="submit"
+                      id="requestSecondFactorSmsCodeButton"
+                      class="aic-control"
+                      data-action="requestSecondFactorSmsCode"
+                    >
+                      ********78
+                    </button>
+                    <p
+                      class="aic-error"
+                      id="requestSecondFactorCodeSmsError"
+                    ></p>
+                  </div>
+
+                  <p
+                    style="display: none"
+                    class="aic-error"
+                    id="requestSecondFactorCodeError"
+                  >
+                    {* textAuthRuleSecondFactorActionError *}
+                  </p>
+                </div>
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textCancelRequest *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: none"
+              id="secondFactorSentSuccess"
+              class="screen"
+            >
+              <div class="auth-success-screen content-wrapper">
+                <span class="success-check"></span>
+                <h2 class="screen-heading">
+                  {* textSecondFactorSentSuccessful *}
+                </h2>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: none"
+              id="authRule_secondFactorRegistration"
+              class="screen"
+            >
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textAuthRuleSecondFactorRegistrationHeading *}
+                </h1>
+                <p class="screen-description">
+                  {* textAuthRuleSecondFactorRegistrationValue *}
+                </p>
+                <div class="form-action-buttons">
+                  <p class="action-description">
+                    {* textAuthRuleSecondFactorActionTitle *}
+                  </p>
+
+                  <div id="requestSecondFactorRegistrationEmailCodeContainer">
+                    <p
+                      class="action-description"
+                      id="requestSecondFactorRegistrationEmailCodeTitle"
+                    >
+                      {* textAuthRuleSecondFactorRegistrationEmailCodeTitle *}
+                    </p>
+                    <button
+                      type="submit"
+                      id="requestSecondFactorRegistrationEmailCodeButton"
+                      class="aic-control"
+                      data-action="requestSecondFactorRegistrationEmailCode"
+                    >
+                      s****d@asdad.com
+                    </button>
+                    <p
+                      class="aic-error"
+                      id="requestSecondFactorRegistrationCodeEmailError"
+                    ></p>
+                  </div>
+
+                  <div id="requestSecondFactorRegistrationSmsCodeContainer">
+                    <p
+                      class="action-description"
+                      id="requestSecondFactorRegistrationSmsCodeTitle"
+                    >
+                      {* textAuthRuleSecondFactorRegistrationSmsCodeTitle *}
+                    </p>
+                    <button
+                      type="submit"
+                      id="requestSecondFactorRegistrationSmsCodeButton"
+                      class="aic-control"
+                      data-action="requestSecondFactorRegistrationSmsCode"
+                    >
+                      ********78
+                    </button>
+                    <p
+                      class="aic-error"
+                      id="requestSecondFactorRegistrationCodeSmsError"
+                    ></p>
+                  </div>
+
+                  <p
+                    style="display: none"
+                    class="aic-error"
+                    id="requestSecondFactorRegistrationCodeError"
+                  >
+                    {* textAuthRuleSecondFactorRegistrationActionError *}
+                  </p>
+                </div>
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textCancelRequest *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: none"
+              id="authRule_secondFactorLoginCode"
+              class="screen"
+            >
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textAuthRuleSecondFactorLoginCodeHeading *}
+                </h1>
+
+                <p class="screen-description" id="secondFactorCodeLoginEmail">
+                  {* textAuthRuleSecondFactorLoginCodeValue *} s****d@asdad.com
+                </p>
+
+                <p class="screen-description" id="secondFactorCodeLoginSms">
+                  {* textAuthRuleSecondFactorLoginCodeValue *}
+                  <span id="secondFactorCodeLoginSmsNumber">********78 </span>
+                </p>
+
+                <div class="form-action-buttons">
+                  <p class="action-description">
+                    {* textAuthRuleSecondFactorLoginCodeActionTitle *}
+                  </p>
+                  <p>
+                    <input
+                      id="secondFactorCodeLoginInput"
+                      value=""
+                      type="text"
+                      class="aic-input"
+                      placeholder="{* textAuthRuleSecondFactorLoginCodePlaceholder *}"
+                      data-action="submitLoginCode"
+                    />
+                  </p>
+
+                  <button
+                    type="submit"
+                    id="submitSecondFactorCodeLoginButton"
+                    class="aic-control"
+                    data-action="submitLoginCode"
+                  >
+                    {* textAuthRuleSecondFactorLoginCodeSubmit *}
+                  </button>
+                </div>
+                <div id="resendCodeSecondFactorLogin">
+                  <p>
+                    {* textSecondFactorLoginCodeResend *}
+                    <a href="#" class="aic-control" data-action="resendCode">
+                      {* textSecondFactorLoginCodeSendLink *}
+                    </a>
+                  </p>
+                </div>
+                <div id="resendCodeSecondFactorLoginInvalid">
+                  <p class="aic-error">
+                    {* textSecondFactorLoginCodeResendInvalid *}
+                    <a
+                      href="#"
+                      class="aic-control aic-error"
+                      data-action="resendCode"
+                    >
+                      {* textSecondFactorLoginCodeResendInvalidLink *}
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text">
+                    <a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                    >
+                      {* textCancelRequest *}
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: none"
+              id="authRule_secondFactorRegistrationCode"
+              class="screen"
+            >
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textAuthRuleSecondFactorRegistrationCodeHeading *}
+                </h1>
+
+                <p
+                  class="screen-description"
+                  id="secondFactorCodeRegistrationEmail"
+                >
+                  {* textAuthRuleSecondFactorRegistrationCodeValue *}
+                  s****d@asdad.com
+                </p>
+
+                <p
+                  class="screen-description"
+                  id="secondFactorCodeRegistrationSms"
+                >
+                  {* textAuthRuleSecondFactorRegistrationCodeValue *}
+                  <span id="secondFactorCodeRegistrationSmsNumber"
+                    >********78
+                  </span>
+                </p>
+
+                <div class="form-action-buttons">
+                  <p class="action-description">
+                    {* textAuthRuleSecondFactorRegistrationCodeActionTitle *}
+                  </p>
+                  <p>
+                    <input
+                      id="secondFactorCodeRegistrationInput"
+                      value=""
+                      type="text"
+                      class="aic-input"
+                      placeholder="{* textAuthRuleSecondFactorRegistrationCodePlaceholder *}"
+                      data-action="submitRegistrationCode"
+                    />
+                  </p>
+
+                  <button
+                    type="submit"
+                    id="submitSecondFactorCodeRegistrationButton"
+                    class="aic-control"
+                    data-action="submitRegistrationCode"
+                  >
+                    {* textAuthRuleSecondFactorRegistrationCodeSubmit *}
+                  </button>
+                </div>
+
+                <div id="resendCodeSecondFactorRegistration">
+                  <p>
+                    {* textSecondFactorRegistrationCodeResend *}
+                    <a href="#" class="aic-control" data-action="resendCode">
+                      {* textSecondFactorRegistrationCodeSendLink *}
+                    </a>
+                  </p>
+                </div>
+                <div id="resendCodeSecondFactorRegistrationInvalid">
+                  <p class="aic-error">
+                    {* textSecondFactorRegistrationCodeResendInvalid *}
+                    <a
+                      href="#"
+                      class="aic-control aic-error"
+                      data-action="resendCode"
+                    >
+                      {* textSecondFactorRegistrationCodeResendInvalidLink *}
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text">
+                    <a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                    >
+                      {* textCancelRequest *}
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="authRule_reqAttrs" class="screen">
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textAuthRuleRequiredAttributesHeading *}
+                </h1>
+                <p class="screen-description">
+                  {* textAuthRuleRequiredAttributesValue *}
+                </p>
+                {* #authRuleRequiredAttributesForm *} {* displayName *} {*
+                emailAddress *}
+                <div class="form-action-buttons">
+                  <button type="submit">
+                    {* textAuthRuleRequiredAttributesSubmit *}
+                  </button>
+                </div>
+                {* /authRuleRequiredAttributesForm *}
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textCancelRequest *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="authRule_consents" class="screen">
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textAuthRuleConsentsHeading *}
+                </h1>
+                <p class="screen-description">
+                  {* textAuthRuleConsentsValue *}
+                </p>
+                {* #authRuleConsentsForm *} {* marketingConsent *}
+                <div class="form-action-buttons">
+                  <button type="submit">
+                    {* textAuthRuleConsentsSubmit *}
+                  </button>
+                </div>
+                {* /authRuleConsentsForm *}
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textCancelRequest *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="authRule_acceptLegal" class="screen">
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textAuthRuleLegalAcceptanceHeading *}
+                </h1>
+                <p class="screen-description">
+                  {* textAuthRuleLegalAcceptanceValue *}
+                </p>
+                {* #authRuleLegalAcceptanceForm *}
+
+                <div class="form-action-buttons">
+                  <button type="submit">
+                    {* textAuthRuleLegalAcceptanceSubmit *}
+                  </button>
+                </div>
+                {* /authRuleLegalAcceptanceForm *}
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textCancelRequest *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="authRule_verifyEmail" class="screen">
+              <div class="auth-screen content-wrapper">
+                <h1 class="screen-heading">
+                  {* textVerifyEmailScreenHeading *}
+                </h1>
+
+                <p class="screen-description">{* textVerifyEmailAuthRule *}</p>
+                {* #authRuleResendVerificationForm *} {* readOnlyEmailAddress *}
+                <div class="form-action-buttons">
+                  <button type="submit">
+                    {* textVerifyEmailRequestSubmit *}
+                  </button>
+                </div>
+                {* /authRuleResendVerificationForm *}
+              </div>
+              <div class="additional-actions-container">
+                <div class="content-wrapper">
+                  <span class="help-text"
+                    ><a
+                      href="#"
+                      class="aic-control cancel-link"
+                      data-action="cancel"
+                      >{* textCancelRequest *}</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="deleteAccountSuccess" class="screen">
+              <div class="auth-success-screen content-wrapper">
+                <span class="success-check"></span>
+                <h2 class="screen-heading">
+                  {* textDeleteAccountSuccessful *}
+                </h2>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="requestDataSuccess" class="screen">
+              <div class="auth-success-screen content-wrapper">
+                <span class="success-check"></span>
+                <h2 class="screen-heading">{* textRequestDataSuccessful *}</h2>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="profileSaveSuccess" class="screen">
+              <div class="auth-success-screen content-wrapper">
+                <span class="success-check"></span>
+                <h2 class="screen-heading">{* textProfileSaveSuccessful *}</h2>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none" id="visitingMessage" class="screen">
+              <div class="auth-success-screen content-wrapper">
+                <p class="screen-description">{* textVisitingMessage *}</p>
+              </div>
+              <div class="footer-container">
+                <div class="content-wrapper">
+                  <span class="help-link"
+                    >{* textNeedHelp *}{* linkHelp *}</span
+                  >
+                  <div class="footer-text">{* textFooter *}</div>
+                  <div class="footer-extra-text">{* textFooterExtra *}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

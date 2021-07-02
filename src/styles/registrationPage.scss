@@ -100,10 +100,6 @@ button.social-provider.googleplus {
   }
 }
 
-.aic-control.cancel-link {
-  display: none;
-}
-
 .traditional-registration {
   justify-content: left;
 }
@@ -153,4 +149,8 @@ div#capture_traditionalRegistration_form_item_inner_legalAcceptance label {
 .additional-actions-container {
   padding: 10px 25px 0px 25px;
   background-color: #edf2f5;
+}
+
+span.help-text a.aic-control.cancel-link {
+  display: none;
 }
