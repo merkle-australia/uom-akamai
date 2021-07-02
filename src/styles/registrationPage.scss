@@ -113,12 +113,18 @@ form label {
   color: black;
   font-size: 16px;
   font-weight: 700;
-  font-family: "Source Sans Pro";
 }
 
 form input {
   width: 500px;
   height: 45px;
+}
+
+form {
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+  letter-spacing: 0 !important;
+  line-height: 22px !important;
 }
 
 .janrain-capture-ui .capture_checkbox label {
@@ -127,8 +133,16 @@ form input {
   font-size: 16px !important;
   letter-spacing: 0 !important;
   line-height: 22px !important;
-  margin-bottom: 15px !important;
   font-weight: 400;
+}
+
+.janrain-capture-ui .switch .capture_tip {
+  font-size: 16px;
+  letter-spacing: 0 !important;
+  line-height: 22px !important;
+  color: #000;
+  margin-top: -35px;
+  font-family: "Source Sans Pro";
 }
 
 div#capture_traditionalRegistration_form_item_inner_legalAcceptance label {
