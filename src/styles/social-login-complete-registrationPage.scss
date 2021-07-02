@@ -1,0 +1,21 @@
+.switch input {
+  display: unset;
+}
+
+.switch label {
+  height: 40px;
+  position: relative;
+  width: 30px;
+  text-indent: 0px;
+  overflow: hidden;
+}
+
+.capture_socialRegistration_form_item_inner_marketingConsent + .capture-tip {
+  position: relative;
+  bottom: 2.5em;
+  font-size: 16px !important;
+  letter-spacing: 0 !important;
+  line-height: 22px !important;
+  color: #000 !important;
+  font-family: "Source Sans Pro" !important;
+}

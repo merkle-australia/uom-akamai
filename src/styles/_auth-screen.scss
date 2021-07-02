@@ -1,0 +1,37 @@
+/* UoM open day EOI- Create a new account*/
+
+/*CSS for hiding text above the countinue button */
+
+#janrainCaptureWidget p.registration-acceptance {
+  display: none;
+}
+
+/*CSS for hiding text below the continue button*/
+
+// #traditionalRegistration .additional-actions-container {
+//   display: none;
+// }
+
+#loginSuccess {
+  display: none !important;
+}
+
+#loginSuccess .auth-success-screen.content-wrapper {
+  display: none !important;
+}
+
+#loginSuccess .footer-container {
+  display: none !important;
+}
+
+#registrationSuccess {
+  display: none !important;
+}
+
+#registrationSuccess .auth-success-screen.content-wrapper {
+  display: none !important;
+}
+
+#registrationSuccess .footer-container {
+  display: none !important;
+}

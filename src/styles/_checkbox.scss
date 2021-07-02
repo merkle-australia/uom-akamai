@@ -1,0 +1,117 @@
+/*CSS for check box styling */
+
+div#capture_traditionalRegistration_form_item_inner_legalAcceptance label {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+
+/*CSS for check box row styling */
+
+input#capture_traditionalRegistration_legalAcceptance {
+  float: left;
+  margin-top: 6px;
+  margin-right: 12px;
+}
+
+.janrain-capture-ui .capture_checkbox .capture_input_checkbox {
+  top: -13px;
+  cursor: pointer;
+}
+
+/*CSS for Marketing consent row styling */
+
+div#capture_traditionalRegistration_form_item_marketingConsent {
+  margin-top: 25px;
+}
+
+/*CSS for Marketing consent slide round styling */
+
+div#capture_traditionalRegistration_form_item_marketingConsent .slider.round {
+  margin-top: 10px;
+}
+
+.social-login-buttons span.content-wrapper {
+  text-align: center !important;
+  padding: 12px 0 !important;
+}
+
+.social-login-buttons span.provider-name {
+  padding-top: 1px;
+}
+
+#capture_traditionalRegistration_traditionalRegistrationForm
+  button.register-button {
+  color: #ffffff !important;
+  height: 50px !important;
+  font-size: 16px;
+}
+
+.social-login-buttons button.facebook:hover {
+  background-color: #ffffff !important;
+}
+
+/* Complete your registration - Checkbox text and continue button CSS*/
+
+input#capture_socialRegistration_legalAcceptance {
+  width: 25px;
+  float: left;
+  margin-right: 10px;
+}
+
+div#capture_socialRegistration_form_item_inner_legalAcceptance {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+#capture_socialRegistration_socialRegistrationForm button.register-button {
+  background: #094183 !important;
+  border: 1px solid #094183 !important;
+  height: 50px !important;
+  font-size: 16px;
+}
+
+div#capture_socialRegistration_form_item_inner_legalAcceptance label {
+  font-weight: 400;
+}
+
+/* Social Registration Hide Cancel Request Button */
+
+#socialRegistration .additional-actions-container {
+  display: none;
+}
+
+a#capture_traditionalRegistration_linkHelp,
+a#capture_socialRegistration_linkHelp {
+  text-transform: none;
+}
+
+.slider {
+  background-color: #6d6d6d;
+}
+
+input#capture_traditionalRegistration_marketingConsent {
+  display: block;
+}
+
+.slider.round {
+  display: none;
+}
+
+label[for="capture_traditionalRegistration_marketingConsent"] {
+  visibility: hidden;
+  position: relative;
+}
+
+label[for="capture_traditionalRegistration_marketingConsent"] input {
+  visibility: visible;
+  position: relative;
+}
+
+div#capture_traditionalRegistration_form_item_inner_marketingConsent {
+  height: 10px;
+}
+
+.janrain-capture-ui .switch .capture_tip {
+  margin-left: 38px;
+}
