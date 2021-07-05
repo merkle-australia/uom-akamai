@@ -356,7 +356,7 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
             return Constructor;
         }
         var intlTelInputGlobals = {
-            getInstance: function getInstance(input) {
+            getInstance: function getInstance(input) { 
                 var id = input.getAttribute("data-intl-tel-input-id");
                 return window.intlTelInputGlobals.instances[id];
             },
@@ -391,7 +391,7 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
             // inject a hidden input with this name, and on submit, populate it with the result of getNumber
             hiddenInput: "",
             // initial country
-            initialCountry: "",
+            initialCountry: "au",
             // localized country names e.g. { 'de': 'Deutschland' }
             localizedCountries: null,
             // don't insert international dial codes
@@ -779,7 +779,9 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
                     }
                     // NOTE: if initialCountry is set to auto, that will be handled separately
                     // format - note this wont be run after _updateDialCode as that's only called if no val
-                    if (val) this._updateValFromNumber(val);
+                    if (val) {
+                        this._updateValFromNumber(val);
+                    }
                 }
             }, {
                 key: "_initListeners",
@@ -936,7 +938,7 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
                         var numeric = this._getNumeric(this.telInput.value);
                         // if just a plus, or if just a dial code
                         if (!numeric || this.selectedCountryData.dialCode === numeric) {
-                            this.telInput.value = "";
+                            this.telInput.value = "+";
                         }
                     }
                 }
@@ -1226,7 +1228,6 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
                     // update the selected country's title attribute
                     var title = countryCode ? "".concat(this.selectedCountryData.name, ": +").concat(this.selectedCountryData.dialCode) : "Unknown";
                     this.selectedFlag.setAttribute("title", title);
-                    document.getElementById("capture_traditionalRegistration_mobileNumber").value = this.selectedCountryData.dialCode;
                     if (this.options.separateDialCode) {
                         var dialCode = this.selectedCountryData.dialCode ? "+".concat(this.selectedCountryData.dialCode) : "";
                         this.selectedDialCode.innerHTML = dialCode;
@@ -2150,13 +2151,27 @@ k("intlTelInputUtils.getValidationError",function(a,b){try{var c=K.g(),d=Z(c,a,b
 k("intlTelInputUtils.isValidNumber",function(a,b){try{var c=K.g(),d=Z(c,a,b);var e=Oa(c,d),g=y(d,1),f=S(c,g,e),h;if(!(h=null==f)){var l;if(l="001"!=e){var z=U(c,e);if(null==z)throw Error("Invalid region code: "+e);var M=y(z,10);l=g!=M}h=l}if(h)var wa=!1;else{var Ta=R(d);wa=-1!=W(Ta,f)}return wa}catch(Ua){return!1}});k("intlTelInputUtils.numberFormat",{E164:0,INTERNATIONAL:1,NATIONAL:2,RFC3966:3});
 k("intlTelInputUtils.numberType",{FIXED_LINE:0,MOBILE:1,FIXED_LINE_OR_MOBILE:2,TOLL_FREE:3,PREMIUM_RATE:4,SHARED_COST:5,VOIP:6,PERSONAL_NUMBER:7,PAGER:8,UAN:9,VOICEMAIL:10,UNKNOWN:-1});k("intlTelInputUtils.validationError",{IS_POSSIBLE:0,INVALID_COUNTRY_CODE:1,TOO_SHORT:2,TOO_LONG:3,IS_POSSIBLE_LOCAL_ONLY:4,INVALID_LENGTH:5});}
 
- var input = document.querySelector("#capture_traditionalRegistration_mobileNumber");
-     window.intlTelInput(input, {
-      utilsScript:test(),
-     });
+ var inputA = document.querySelector("#capture_traditionalRegistration_mobileNumber");
+ if (inputA) {
+    window.intlTelInput(inputA, {
+        utilsScript:test(),
+    });
+  
+    inputA.setAttribute("title", "international phone number");
+    inputA.setAttribute("type", "tel");
+    inputA.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(/[^a-z0-9+/+/]+/gi, '') )
+ }
 
-     input.setAttribute("title", "international phone number");
-     input.setAttribute("type", "tel");
-     input.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(" ", "").replaceAll("(", "").replaceAll(")", "") )
+
+    var inputB = document.querySelector("#capture_socialRegistration_mobileNumber");
+    if (inputB) {
+        window.intlTelInput(input, {
+            utilsScript:test(),
+        });
+    
+        inputB.setAttribute("title", "international phone number");
+        inputB.setAttribute("type", "tel");
+        inputB.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(/[^a-z0-9+/+/]+/gi, '') )
+    }
 });
 });
