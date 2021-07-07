@@ -37,6 +37,7 @@ button.social-provider.custom-6c25bde1-553a-4c62-aa89-5dc1a67f970a-unimelb-dev-s
 }
 
 .social-login-buttons .content-wrapper {
+  max-width: unset;
   justify-content: center;
   display: flex;
 }
@@ -147,7 +148,7 @@ form {
 
 div#capture_traditionalRegistration_form_item_inner_legalAcceptance label {
   margin-top: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 0;
   font-weight: 500;
 }
 
