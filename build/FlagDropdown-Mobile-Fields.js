@@ -2159,7 +2159,7 @@ k("intlTelInputUtils.numberType",{FIXED_LINE:0,MOBILE:1,FIXED_LINE_OR_MOBILE:2,T
   
     inputA.setAttribute("title", "international phone number");
     inputA.setAttribute("type", "tel");
-    inputA.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(/[^a-z0-9+/+/]+/gi, '') )
+    inputA.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(/[^0-9+/+/]+/gi, '') )
  }
 
 
@@ -2171,7 +2171,7 @@ k("intlTelInputUtils.numberType",{FIXED_LINE:0,MOBILE:1,FIXED_LINE_OR_MOBILE:2,T
     
         inputB.setAttribute("title", "international phone number");
         inputB.setAttribute("type", "tel");
-        inputB.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(/[^a-z0-9+/+/]+/gi, '') )
+        inputB.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(/[^0-9+/+/]+/gi, '') )
     }
 });
 });
