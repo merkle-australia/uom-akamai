@@ -2162,10 +2162,9 @@ k("intlTelInputUtils.numberType",{FIXED_LINE:0,MOBILE:1,FIXED_LINE_OR_MOBILE:2,T
     inputA.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(/[^0-9+/+/]+/gi, '') )
  }
 
-
     var inputB = document.querySelector("#capture_socialRegistration_mobileNumber");
     if (inputB) {
-        window.intlTelInput(input, {
+        window.intlTelInput(inputB, {
             utilsScript:test(),
         });
     
