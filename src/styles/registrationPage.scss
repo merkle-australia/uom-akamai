@@ -1,5 +1,5 @@
 .screen-heading {
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
   text-align: center;
   font-size: 24px;
   font-weight: 700;
@@ -43,7 +43,8 @@ button.social-provider.custom-6c25bde1-553a-4c62-aa89-5dc1a67f970a-unimelb-dev-s
 }
 
 .provider-name {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", "Gill Sans", "Trebuchet MS", "Arial",
+    sans-serif;
 }
 
 .traditional-registration p.screen-description {
@@ -182,4 +183,17 @@ a#traditionalRegistrationSignInRedirectLink.aic-control {
 a:-webkit-any-link {
   font-size: 16px;
   font-family: "Source Sans Pro";
+}
+
+button.social-provider.custom-6c25bde1-553a-4c62-aa89-5dc1a67f970a-da0b2120-5215-42ec-957a-8e0b9cd02680
+  span.provider-name {
+  color: white;
+}
+
+.social-provider-icon.custom-6c25bde1-553a-4c62-aa89-5dc1a67f970a-da0b2120-5215-42ec-957a-8e0b9cd02680,
+.social-provider-icon.unimelb,
+.social-provider-icon.da0b2120-5215-42ec-957a-8e0b9cd02680,
+.janrain-provider-icon-unimelb,
+.janrain-provider-icon-da0b2120-5215-42ec-957a-8e0b9cd02680 {
+  display: none;
 }
