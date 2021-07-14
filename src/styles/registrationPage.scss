@@ -132,7 +132,7 @@ form {
   letter-spacing: 0 !important;
   line-height: 22px !important;
   max-width: 100%;
-  min-width: 315px;
+  min-width: 280px;
 }
 
 .janrain-capture-ui .capture_checkbox label {
@@ -175,10 +175,12 @@ div#capture_traditionalRegistration_form_item_inner_legalAcceptance label {
 .screen > .content-wrapper {
   padding: 25px 50px;
   margin-bottom: 0px;
+}
 
-  @media screen and (max-width: 765px) {
-    padding: 25px 15px;
-  }
+@media screen and (max-width: 765px) {
+    .screen > .content-wrapper {
+        padding: 25px 15px !important;
+    }
 }
 
 .additional-actions-container {
