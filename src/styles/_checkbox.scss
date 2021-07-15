@@ -22,7 +22,11 @@ input#capture_traditionalRegistration_legalAcceptance {
 /*CSS for Marketing consent row styling */
 
 div#capture_traditionalRegistration_form_item_marketingConsent {
-  margin-top: 25px;
+  margin-top: 40px;
+}
+
+label[for="capture_traditionalRegistration_marketingConsent"] {
+    overflow: visible !important;
 }
 
 /*CSS for Marketing consent slide round styling */
@@ -115,3 +119,23 @@ div#capture_traditionalRegistration_form_item_inner_marketingConsent {
 .janrain-capture-ui .switch .capture_tip {
   margin-left: 38px;
 }
+
+input[type="checkbox"]:checked:after {
+    content: url(https://static.identity.unimelb.edu.au/unimelb/prod/SaveTheDate_CSS/Icon/Select%20On.svg);
+    color: white;
+    font-size: 22px;
+    background-color: #094183;
+    text-align: center;
+    justify-items: center;
+  }
+  input[type="checkbox"]:after {
+    content: " ";
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+    visibility: visible;
+  }
+  input[type="checkbox"] {
+    height: 25px;
+    width: 25px;
+  }

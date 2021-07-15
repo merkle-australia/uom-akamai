@@ -1,25 +1,49 @@
-/* Font Calling */
-
+// PROD Font face
 @font-face {
-    font-family: 'Noto Serif';
-    src: url(https://static.identity.unimelb.edu.au/unimelb/dev/SaveTheDate_CSS/Fonts/NotoSerif-Regular.ttf);
-    font-weight: regular;
+  font-family: "Nato Serif";
+  src: url(https://static.identity.unimelb.edu.au/unimelb/prod/SaveTheDate_CSS/Fonts/NotoSerif-Bold.ttf);
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Noto Serif';
-    src: url(https://static.identity.unimelb.edu.au/unimelb/dev/SaveTheDate_CSS/Fonts/NotoSerif-Bold.ttf);
-    font-weight: bold;
+  font-family: "Nato Serif";
+  src: url(https://static.identity.unimelb.edu.au/unimelb/prod/SaveTheDate_CSS/Fonts/NotoSerif-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Source Sans Pro';
-    src: url(https://static.identity.unimelb.edu.au/unimelb/dev/SaveTheDate_CSS/Fonts/SourceSansPro-Regular.ttf);
-    font-weight: 400;
+  font-family: "Nato Serif";
+  src: url(https://static.identity.unimelb.edu.au/unimelb/prod/SaveTheDate_CSS/Fonts/NotoSerif-Italic.ttf);
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Source Sans Pro';
-    src: url(https://static.identity.unimelb.edu.au/unimelb/dev/SaveTheDate_CSS/Fonts/SourceSansPro-Bold.ttf);
-    font-weight: bold;
+  font-family: "Nato Serif";
+  src: url(https://static.identity.unimelb.edu.au/unimelb/prod/SaveTheDate_CSS/Fonts/NotoSerif-Regular.ttf);
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(https://static.identity.unimelb.edu.au/unimelb/prod/SaveTheDate_CSS/Fonts/SourceSansPro-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(https://static.identity.unimelb.edu.au/unimelb/prod/SaveTheDate_CSS/Fonts/SourceSansPro-Bold.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(https://static.identity.unimelb.edu.au/unimelb/prod/SaveTheDate_CSS/Fonts/SourceSansPro-Italic.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(https://static.identity.unimelb.edu.au/unimelb/prod/SaveTheDate_CSS/Fonts/SourceSansPro-Regular.ttf);
+  font-weight: regular;
 }

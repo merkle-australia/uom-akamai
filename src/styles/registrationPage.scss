@@ -1,5 +1,5 @@
 .screen-heading {
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
   text-align: center;
   font-size: 24px;
   font-weight: 700;
@@ -43,7 +43,8 @@ button.social-provider.custom-6c25bde1-553a-4c62-aa89-5dc1a67f970a-unimelb-dev-s
 }
 
 .provider-name {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", "Gill Sans", "Trebuchet MS", "Arial",
+    sans-serif;
 }
 
 .traditional-registration p.screen-description {
@@ -65,6 +66,9 @@ button.social-provider.custom-6c25bde1-553a-4c62-aa89-5dc1a67f970a-unimelb-dev-s
 
 #content-wrapper {
   box-shadow: unset;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
 }
 
 #header-container {
@@ -117,8 +121,9 @@ form label {
 }
 
 form input {
-  width: 500px;
+  max-width: 500px;
   height: 45px;
+  width: 100%;
 }
 
 form {
@@ -126,6 +131,8 @@ form {
   font-family: "Source Sans Pro";
   letter-spacing: 0 !important;
   line-height: 22px !important;
+  max-width: 100%;
+  min-width: 280px;
 }
 
 .janrain-capture-ui .capture_checkbox label {
@@ -157,8 +164,23 @@ div#capture_traditionalRegistration_form_item_inner_legalAcceptance label {
   font-size: 16px;
 }
 
+.screen {
+  max-width: 100%;
+  width: 100%;
+  min-width: unset;
+  align-items: center;
+  justify-content: center;
+}
+
 .screen > .content-wrapper {
+  padding: 25px 50px;
   margin-bottom: 0px;
+}
+
+@media screen and (max-width: 765px) {
+    .screen > .content-wrapper {
+        padding: 25px 15px !important;
+    }
 }
 
 .additional-actions-container {
@@ -167,5 +189,32 @@ div#capture_traditionalRegistration_form_item_inner_legalAcceptance label {
 }
 
 span.help-text a.aic-control.cancel-link {
+  display: none;
+}
+
+a#traditionalRegistrationSignInRedirectLink.aic-control {
+  padding-left: 5px;
+}
+
+.help-text {
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+}
+
+a:-webkit-any-link {
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+}
+
+button.social-provider.custom-6c25bde1-553a-4c62-aa89-5dc1a67f970a-da0b2120-5215-42ec-957a-8e0b9cd02680
+  span.provider-name {
+  color: white;
+}
+
+.social-provider-icon.custom-6c25bde1-553a-4c62-aa89-5dc1a67f970a-da0b2120-5215-42ec-957a-8e0b9cd02680,
+.social-provider-icon.unimelb,
+.social-provider-icon.da0b2120-5215-42ec-957a-8e0b9cd02680,
+.janrain-provider-icon-unimelb,
+.janrain-provider-icon-da0b2120-5215-42ec-957a-8e0b9cd02680 {
   display: none;
 }
