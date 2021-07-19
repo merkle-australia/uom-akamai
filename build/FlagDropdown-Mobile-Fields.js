@@ -1152,7 +1152,7 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
                         // there are multiple country matches, that the first one is selected (note: we could
                         // just check that here, but it requires the same loop that we already have later)
                         var alreadySelected = countryCodes.indexOf(this.selectedCountryData.iso2) !== -1 && numeric.length <= dialCode.length - 1;
-                        // var isRegionlessNanpNumber = selectedDialCode === "1" && this._isRegionlessNanp(numeric);
+                        var isRegionlessNanpNumber = selectedDialCode === "1" && this._isRegionlessNanp(numeric);
                         // only update the flag if:
                         // A) NOT (we currently have a NANP flag selected, and the number is a regionlessNanp)
                         // AND
@@ -1373,7 +1373,7 @@ janrain.events.onCaptureRenderComplete.addHandler(function(event) {
                         // nationalMode is disabled
                         if (inputVal) {
                             // there is an existing value with no dial code: prefix the new dial code
-                            newNumber = newDialCode;
+                            newNumber = newDialCode + inputVal;
                         } else if (hasSelectedListItem || !this.options.autoHideDialCode) {
                             // no existing value and either they've just selected a list item, or autoHideDialCode is
                             // disabled: insert new dial code
@@ -2151,26 +2151,149 @@ k("intlTelInputUtils.getValidationError",function(a,b){try{var c=K.g(),d=Z(c,a,b
 k("intlTelInputUtils.isValidNumber",function(a,b){try{var c=K.g(),d=Z(c,a,b);var e=Oa(c,d),g=y(d,1),f=S(c,g,e),h;if(!(h=null==f)){var l;if(l="001"!=e){var z=U(c,e);if(null==z)throw Error("Invalid region code: "+e);var M=y(z,10);l=g!=M}h=l}if(h)var wa=!1;else{var Ta=R(d);wa=-1!=W(Ta,f)}return wa}catch(Ua){return!1}});k("intlTelInputUtils.numberFormat",{E164:0,INTERNATIONAL:1,NATIONAL:2,RFC3966:3});
 k("intlTelInputUtils.numberType",{FIXED_LINE:0,MOBILE:1,FIXED_LINE_OR_MOBILE:2,TOLL_FREE:3,PREMIUM_RATE:4,SHARED_COST:5,VOIP:6,PERSONAL_NUMBER:7,PAGER:8,UAN:9,VOICEMAIL:10,UNKNOWN:-1});k("intlTelInputUtils.validationError",{IS_POSSIBLE:0,INVALID_COUNTRY_CODE:1,TOO_SHORT:2,TOO_LONG:3,IS_POSSIBLE_LOCAL_ONLY:4,INVALID_LENGTH:5});}
 
- var inputA = document.querySelector("#capture_traditionalRegistration_mobileNumber");
- if (inputA) {
-    window.intlTelInput(inputA, {
-        utilsScript:test(),
-    });
-  
-    inputA.setAttribute("title", "international phone number");
-    inputA.setAttribute("type", "tel");
-    inputA.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(/[^0-9+/+/]+/gi, '') )
- }
+    const topTenCountries = [
+        { code: "+1", index: 2, trunk: 1 }, // top ten prioritise these numbers
+        { code: "+61", index: 3, trunk: 0 },
+        { code: "+86", index: 3, trunk: 0 },
+        { code: "+60", index: 3, trunk: 0 },
+        { code: "+65", index: 3, trunk: 0 },
+        { code: "+62", index: 3, trunk: 0 },
+        { code: "+91", index: 3, trunk: 0 },
+        { code: "+64", index: 3, trunk: 0 },
+        { code: "+84", index: 3, trunk: 0 }, 
+        { code: "+852", index: 4, trunk: 0 }, // end top ten
+        // trunk 0 - two digits intl code
+        { code: "+20", index: 3, trunk: 0 },
+        { code: "+27", index: 3, trunk: 0 },
+        { code: "+31", index: 3, trunk: 0 },
+        { code: "+32", index: 3, trunk: 0 },
+        { code: "+33", index: 3, trunk: 0 },
+        { code: "+40", index: 3, trunk: 0 },
+        { code: "+41", index: 3, trunk: 0 },
+        { code: "+43", index: 3, trunk: 0 },
+        { code: "+44", index: 3, trunk: 0 },
+        { code: "+46", index: 3, trunk: 0 },
+        { code: "+49", index: 3, trunk: 0 },
+        { code: "+51", index: 3, trunk: 0 },
+        { code: "+53", index: 3, trunk: 0 },
+        { code: "+54", index: 3, trunk: 0 },
+        { code: "+58", index: 3, trunk: 0 },
+        { code: "+63", index: 3, trunk: 0 },
+        { code: "+66", index: 3, trunk: 0 },
+        { code: "+81", index: 3, trunk: 0 },
+        { code: "+82", index: 3, trunk: 0 },
+        { code: "+90", index: 3, trunk: 0 },
+        { code: "+91", index: 3, trunk: 0 },
+        { code: "+92", index: 3, trunk: 0 },
+        { code: "+93", index: 3, trunk: 0 },
+        { code: "+94", index: 3, trunk: 0 },
+        { code: "+95", index: 3, trunk: 0 },
+        { code: "+98", index: 3, trunk: 0 },
+        // trunk 0 - three digits intl code
+        { code: "+212", index: 4, trunk: 0 },
+        { code: "+213", index: 4, trunk: 0 },
+        { code: "+218", index: 4, trunk: 0 },
+        { code: "+232", index: 4, trunk: 0 },
+        { code: "+233", index: 4, trunk: 0 },
+        { code: "+234", index: 4, trunk: 0 },
+        { code: "+241", index: 4, trunk: 0 },
+        { code: "+243", index: 4, trunk: 0 },
+        { code: "+249", index: 4, trunk: 0 },
+        { code: "+251", index: 4, trunk: 0 },
+        { code: "+254", index: 4, trunk: 0 },
+        { code: "+255", index: 4, trunk: 0 },
+        { code: "+256", index: 4, trunk: 0 },
+        { code: "+260", index: 4, trunk: 0 },
+        { code: "+261", index: 4, trunk: 0 },
+        { code: "+262", index: 4, trunk: 0 },
+        { code: "+263", index: 4, trunk: 0 },
+        { code: "+264", index: 4, trunk: 0 },
+        { code: "+291", index: 4, trunk: 0 },
+        { code: "+353", index: 4, trunk: 0 },
+        { code: "+355", index: 4, trunk: 0 },
+        { code: "+358", index: 4, trunk: 0 },
+        { code: "+359", index: 4, trunk: 0 },
+        { code: "+373", index: 4, trunk: 0 },
+        { code: "+374", index: 4, trunk: 0 },
+        { code: "+380", index: 4, trunk: 0 },
+        { code: "+381", index: 4, trunk: 0 },
+        { code: "+382", index: 4, trunk: 0 },
+        { code: "+383", index: 4, trunk: 0 },
+        { code: "+385", index: 4, trunk: 0 },
+        { code: "+386", index: 4, trunk: 0 },
 
-    var inputB = document.querySelector("#capture_socialRegistration_mobileNumber");
-    if (inputB) {
-        window.intlTelInput(inputB, {
-            utilsScript:test(),
-        });
-    
-        inputB.setAttribute("title", "international phone number");
-        inputB.setAttribute("type", "tel");
-        inputB.addEventListener('blur', (e) => e.target.value = e.target.value.replaceAll(/[^0-9+/+/]+/gi, '') )
+        { code: "+387", index: 4, trunk: 0 },
+        { code: "+389", index: 4, trunk: 0 },
+        { code: "+421", index: 4, trunk: 0 },
+        { code: "+590", index: 4, trunk: 0 },
+        { code: "+591", index: 4, trunk: 0 },
+        { code: "+593", index: 4, trunk: 0 },
+        { code: "+594", index: 4, trunk: 0 },
+        { code: "+595", index: 4, trunk: 0 },
+        { code: "+596", index: 4, trunk: 0 },
+        { code: "+597", index: 4, trunk: 0 },
+        { code: "+598", index: 4, trunk: 0 },
+        { code: "+599", index: 4, trunk: 0 },
+        { code: "+855", index: 4, trunk: 0 },
+        { code: "+856", index: 4, trunk: 0 },
+        { code: "+880", index: 4, trunk: 0 },
+        { code: "+886", index: 4, trunk: 0 },
+
+        { code: "+961", index: 4, trunk: 0 },
+        { code: "+962", index: 4, trunk: 0 },
+        { code: "+963", index: 4, trunk: 0 },
+        { code: "+966", index: 4, trunk: 0 },
+        { code: "+967", index: 4, trunk: 0 },
+        { code: "+970", index: 4, trunk: 0 },
+        { code: "+971", index: 4, trunk: 0 },
+        { code: "+972", index: 4, trunk: 0 },
+        { code: "+976", index: 4, trunk: 0 },
+        { code: "+977", index: 4, trunk: 0 },
+        { code: "+994", index: 4, trunk: 0 },
+        { code: "+995", index: 4, trunk: 0 },
+        { code: "+996", index: 4, trunk: 0 },
+        { code: "+998", index: 4, trunk: 0 },
+        // trunk 1 - three digits intl code
+        { code: "+692", index: 4, trunk: 1 },
+        { code: "+691", index: 4, trunk: 1 },
+        // trunk misc
+        { code: "+36", index: 3, trunk: 6 },
+        { code: "+993", index: 4, trunk: 8 },
+        { code: "+7", index: 2, trunk: 8 },
+        { code: "+992", index: 4, trunk: 8 },
+        { code: "+370", index: 4, trunk: 8 },
+        { code: "+375", index: 4, trunk: 80 },
+    ]
+
+    const stripLeadingTrunkCode = (providedNum) => {
+        let stripData = topTenCountries.reduce((prev, curr) => providedNum.startsWith(curr.code) ? curr : prev, null)
+
+        if (stripData && providedNum[stripData.index] == stripData.trunk) { 
+            providedNum = providedNum.slice(0, stripData.index) + providedNum.slice(stripData.index + 1)
+        }
+
+        return providedNum
     }
+
+    const inputSelectors = [
+        document.querySelector("#capture_traditionalRegistration_mobileNumber"),
+        document.querySelector("#capture_socialRegistration_mobileNumber")
+    ]
+
+    inputSelectors.forEach(el => {
+        if (el) {
+            window.intlTelInput(el, {
+                utilsScript:test(),
+            });
+        
+            el.setAttribute("title", "international phone number");
+            el.setAttribute("type", "tel");
+            el.addEventListener('blur', (e) => { 
+                e.target.value = e.target.value.replaceAll(/[^0-9+/+/]+/gi, '') 
+                e.target.value = stripLeadingTrunkCode(e.target.value)
+            })
+        }
+    })
 });
 });
+
